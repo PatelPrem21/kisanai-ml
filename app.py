@@ -53,7 +53,7 @@ def load_model():
     for param in model.parameters():
         param.requires_grad = False
     model.classifier[1] = nn.Linear(1280, len(CLASSES))
-    model.load_state_dict(torch.load('app/models/best_model.pth', map_location='cpu'))
+    model.load_state_dict(torch.load('/app/models/best_model.pth', map_location='cpu'))
     model.eval()
     return model
 
