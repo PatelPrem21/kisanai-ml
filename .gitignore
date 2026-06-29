@@ -7,4 +7,4 @@ data/raw/
 data/processed/
 .env
 kaggle.json
-*.zip
+*.zipvisualimages/
